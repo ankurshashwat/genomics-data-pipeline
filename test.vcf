@@ -1,0 +1,23 @@
+##fileformat=VCFv4.2
+##source=simulatedVCF
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##ALT=<ID=DEL,Description="Deletion">
+##FILTER=<ID=q10,Description="Quality below 10">
+##FILTER=<ID=s50,Description="Less than 50% of samples have data">
+##contig=<ID=chr1,length=248956422>
+##contig=<ID=chr2,length=242193529>
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	sample1	sample2	sample3
+chr1	123456	rs1	A	G	35.5	PASS	.	GT	0/1	1/1	0/0
+chr1	123457	rs2	T	C	.	PASS	DP=14	GT	./.	0/1	1/1
+chr1	123458	rs3	G	A	99	PASS	DP=20	GT	1/1	0/0	.
+chr1	123459	rs4	C	T	47.5	PASS	DP=8	GT	0/1	1/1	1/1
+chr2	234567	rs5	T	A	80	PASS	DP=22	GT	0/0	0/1	1/0
+chr2	234568	rs6	G	C	92	PASS	.	GT	1/1	1/1	0/0
+chr3	345678	rs7	A	T	15	PASS	DP=30	GT	.	1/0	1/1
+chr3	345679	rs8	G	A	60	PASS	DP=19	GT	0/1	1/1	.
+chr3	345680	rs9	C	G	75	PASS	DP=15	GT	1/1	0/1	0/0
+# garbage line to confuse parser
+this line is totally malformed and has no business being here
+chr4	456789	rs10	T	C	.	PASS	DP=11	GT	1/0	0/1
+chr4	456790	rs11	A	G	90	PASS	DP=16	GT	0/0	1/1
