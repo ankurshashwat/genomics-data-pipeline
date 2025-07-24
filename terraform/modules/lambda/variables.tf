@@ -10,12 +10,12 @@ variable "lambda_role_arn" {
 
 variable "input_bucket_name" {
   type        = string
-  description = "Actual name of the input S3 bucket (with suffix)"
+  description = "Name of the input S3 bucket (with suffix)"
 }
 
 variable "output_bucket_name" {
   type        = string
-  description = "Actual name of the output S3 bucket (with suffix)"
+  description = "Name of the output S3 bucket (with suffix)"
 }
 
 variable "glue_job_name" {
